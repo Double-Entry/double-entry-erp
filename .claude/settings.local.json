@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep -rn \"^class.*:\" erpnext/controllers/*.py)"
+      "Bash(grep -rn \"^class.*:\" erpnext/controllers/*.py)",
+      "Read(//Users/nikitagribkov/.claude/**)",
+      "Read(//Users/nikitagribkov/**)"
     ]
   }
 }
