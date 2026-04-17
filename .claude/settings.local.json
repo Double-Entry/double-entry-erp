@@ -3,7 +3,8 @@
     "allow": [
       "Bash(grep -rn \"^class.*:\" erpnext/controllers/*.py)",
       "Read(//Users/nikitagribkov/.claude/**)",
-      "Read(//Users/nikitagribkov/**)"
+      "Read(//Users/nikitagribkov/**)",
+      "Bash(git -C /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp rev-parse --short HEAD)"
     ]
   }
 }

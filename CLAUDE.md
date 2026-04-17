@@ -99,3 +99,20 @@ Country-specific logic lives in `erpnext/regional/<country>/` and is registered 
 ### Patches
 
 Database migrations live in `erpnext/patches/`. They run automatically during `bench migrate` and are registered in `patches.txt`.
+
+## Detailed Documentation
+
+Architecture docs with line-level source citations live under `docs/`. Start with [docs/README.md](docs/README.md) for the index.
+
+- [docs/architecture/overview.md](docs/architecture/overview.md) — module map, where-to-start-tracing cheatsheet, repo-wide conventions.
+- [docs/architecture/controllers.md](docs/architecture/controllers.md) — full controller hierarchy with per-layer responsibilities and `super()` call discipline.
+- [docs/architecture/doctype-pattern.md](docs/architecture/doctype-pattern.md) — the four-file DocType layout and how transaction DocTypes plug into the controller chain.
+- [docs/architecture/doctype-lifecycle.md](docs/architecture/doctype-lifecycle.md) — per-event call order (`validate`, `before_save`, `on_submit`, `on_cancel`, `on_trash`) through the controller chain + `doc_events`.
+- [docs/architecture/hooks-and-overrides.md](docs/architecture/hooks-and-overrides.md) — exhaustive tour of `erpnext/hooks.py` registrations.
+- [docs/patterns/regional-overrides.md](docs/patterns/regional-overrides.md) — how `@erpnext.allow_regional` + `regional_overrides` inject country-specific code.
+- [docs/patterns/patches.md](docs/patterns/patches.md) — `patches.txt`, `pre_model_sync` vs `post_model_sync`, how to add a patch.
+- [docs/flows/accounting-flow.md](docs/flows/accounting-flow.md) — end-to-end GL flow: `make_gl_entries`, `process_gl_map`, `save_entries`, `make_reverse_gl_entries`, round-off, PCV guards. Mermaid for SI submit + cancel.
+- [docs/flows/taxes-and-totals.md](docs/flows/taxes-and-totals.md) — `calculate_taxes_and_totals` pipeline: inclusive/exclusive, item-wise breakup with error diffusion, rounding, tax-row → GL mapping.
+- [docs/flows/payments-flow.md](docs/flows/payments-flow.md) — Payment Entry lifecycle, allocations/advances/FX/deductions, Payment Reconciliation, `set_payment_schedule`. Mermaid for PE submit.
+- [docs/modules/accounts.md](docs/modules/accounts.md) — Accounts-module overview: CoA schema, dimensions + cost centers, fiscal year / accounting periods, tax framework, reports, scheduler jobs.
+- [docs/modules/accounts-doctypes.md](docs/modules/accounts-doctypes.md) — per-doctype reference cards for Sales Invoice, Purchase Invoice, Journal Entry, Payment Entry, POS Invoice, Period Closing Voucher.
