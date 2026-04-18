@@ -7,9 +7,11 @@ related_docs:
   - architecture/overview.md
   - architecture/controllers.md
   - architecture/doctype-lifecycle.md
+  - architecture/scheduler-jobs.md
+  - architecture/hooks-catalogue.md
+  - architecture/boot-session.md
   - patterns/regional-overrides.md
   - patterns/patches.md
-  - patterns/scheduler-jobs.md
 ---
 
 # Hooks and overrides
@@ -75,7 +77,7 @@ Frequencies used in this repo:
 - `weekly` — exchange-rate revaluation ([erpnext/hooks.py:493](../../erpnext/hooks.py:493)).
 - `monthly_long` — deferred accounting + exchange revaluation ([erpnext/hooks.py:496](../../erpnext/hooks.py:496)).
 
-See [patterns/scheduler-jobs.md](../patterns/scheduler-jobs.md) for the catalogue and guidance on adding new jobs.
+See [scheduler-jobs.md](scheduler-jobs.md) for the full catalogue (every entry, owning module, blast radius) and guidance on adding new jobs.
 
 ## 3. `regional_overrides` — country-specific function swaps
 

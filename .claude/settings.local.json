@@ -10,7 +10,9 @@
       "Bash(sed -n '900,920p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/doctype/payment_reconciliation/payment_reconciliation.py)",
       "Bash(sed -n '2588,2600p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/doctype/sales_invoice/sales_invoice.py)",
       "Bash(sed -n '3570,3585p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/doctype/payment_entry/payment_entry.py)",
-      "Bash(sed -n '288,298p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/party.py)"
+      "Bash(sed -n '288,298p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/party.py)",
+      "Bash(git -C /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/ rev-parse --short HEAD)",
+      "Bash(git -C /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/ branch --show-current)"
     ]
   }
 }
