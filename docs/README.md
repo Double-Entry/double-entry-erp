@@ -4,6 +4,15 @@ Architecture and internals documentation for this ERPNext repository. Every entr
 
 Start with [architecture/overview.md](architecture/overview.md) if you are new. Use this index as a lookup map; use each page's `Key files` section to jump into the code.
 
+## Getting Started
+
+- [Getting Started index](getting-started/README.md) — section overview + 5-minute quick start.
+- [Prerequisites](getting-started/prerequisites.md) — versions (Python 3.14, Node 24, MariaDB 10.6 / Postgres, Redis, wkhtmltopdf 0.12.6), apt packages, pre-commit toolchain.
+- [Installation](getting-started/installation.md) — `bench init`, `bench get-app payments && bench get-app erpnext`, `bench new-site`, `install-app`, `after_install` walkthrough, `site_config.json` reference.
+- [Development](getting-started/development.md) — `bench start`, Procfile processes (`redis_cache` / `redis_queue` / `redis_socketio` / `socketio` / `watch` / `schedule` / `web` / `worker`), port `:8000`, DB access, migrations.
+- [Testing and quality](getting-started/testing-and-quality.md) — `run-parallel-tests`, `run-tests --module` / `--test`, `ERPNextTestSuite`, `tearDown` rollback, `allow_tests`, pre-commit (Ruff + Prettier + ESLint), commitlint, `develop`-commit block.
+- [Operations](getting-started/operations.md) — CLI cheatsheet, `site_config` / `common_site_config` keys, production overview, troubleshooting catalogue, debugging tools, jump-points into architecture docs.
+
 ## Architecture
 
 - [Overview](architecture/overview.md) — module map, where-to-start-tracing cheatsheet, conventions.

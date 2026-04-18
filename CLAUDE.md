@@ -104,6 +104,12 @@ Database migrations live in `erpnext/patches/`. They run automatically during `b
 
 Architecture docs with line-level source citations live under `docs/`. Start with [docs/README.md](docs/README.md) for the index.
 
+- [docs/getting-started/README.md](docs/getting-started/README.md) — section overview + 5-minute quick start (`bench init` → `get-app` → `new-site` → `install-app` → `bench start`).
+- [docs/getting-started/prerequisites.md](docs/getting-started/prerequisites.md) — Python 3.14, Node 24, MariaDB 10.6 / Postgres, Redis, `wkhtmltopdf` 0.12.6, apt packages, pre-commit toolchain pins.
+- [docs/getting-started/installation.md](docs/getting-started/installation.md) — `bench init`/`get-app`/`new-site`/`install-app`, `site_config.json` keys, what `after_install` seeds (with link to `erpnext/setup/install.py`).
+- [docs/getting-started/development.md](docs/getting-started/development.md) — `bench start` and the Procfile process catalogue, DB access, migrations.
+- [docs/getting-started/testing-and-quality.md](docs/getting-started/testing-and-quality.md) — `run-parallel-tests`, `run-tests --module`/`--test`, `ERPNextTestSuite` rollback contract, pre-commit (Ruff/Prettier/ESLint), commitlint, `develop`-commit block.
+- [docs/getting-started/operations.md](docs/getting-started/operations.md) — CLI cheatsheet, `site_config` / `common_site_config` key reference, production overview, troubleshooting, debugging tools.
 - [docs/architecture/overview.md](docs/architecture/overview.md) — module map, where-to-start-tracing cheatsheet, repo-wide conventions.
 - [docs/architecture/controllers.md](docs/architecture/controllers.md) — full controller hierarchy with per-layer responsibilities and `super()` call discipline.
 - [docs/architecture/doctype-pattern.md](docs/architecture/doctype-pattern.md) — the four-file DocType layout and how transaction DocTypes plug into the controller chain.
