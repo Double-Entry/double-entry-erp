@@ -26,6 +26,7 @@ The four jurisdictional sections are backed by four skill files living under [.c
 
 | Date | Topic | Question | Jurisdictions | Licenses involved |
 |------|-------|----------|---------------|-------------------|
+| 2026-04-19 | [ERPNext usage rights and restrictions](2026-04-19-erpnext-usage-rights-and-restrictions.md) | Как можно использовать ERPNext и какие есть ограничения (use / SaaS / distribute / modify / embed) | RU / US / EU / RS | GPL-3.0-only, GPL-3.0-or-later, GPL-2.0-or-later, MIT, Apache-2.0, BSD-3-Clause, LGPL-3.0 |
 
 <!-- Agent appends rows above this line, newest first. Format: | YYYY-MM-DD | [Topic](YYYY-MM-DD-slug.md) | <question> | RU / US / EU / RS | SPDX-ID, SPDX-ID, ... | -->
 

@@ -21,7 +21,16 @@
       "Bash(mv eu/SKILL.md skill-legal-eu.md)",
       "Bash(mv rs/SKILL.md skill-legal-rs.md)",
       "Bash(rmdir ru *)",
-      "Bash(chmod +x /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/hooks/example/*.sh)"
+      "Bash(chmod +x /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/hooks/example/*.sh)",
+      "WebFetch(domain:spdx.org)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/frappe/frappe/develop/license.txt\")",
+      "Bash(curl -s \"https://api.github.com/repos/frappe/frappe\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('license:', d.get\\('license',{}\\).get\\('spdx_id'\\), '/', d.get\\('license',{}\\).get\\('name'\\)\\)\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:www.gnu.org)"
     ]
   }
 }
