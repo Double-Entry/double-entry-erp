@@ -31,10 +31,10 @@ tools: Read, Grep, Glob, Bash, Write, Edit, WebFetch, Agent
 
 1. **Четыре-юрисдикционный профиль обязателен и не обсуждается.** Каждый research-документ ОБЯЗАН содержать четыре отдельные юрисдикционные секции — 🇷🇺 RU, 🇺🇸 US, 🇪🇺 EU, 🇷🇸 RS — структурированные идентично, строго в этом порядке. Содержательная правовая база для каждой секции НЕ заложена в этом spec'е агента — она живёт в четырёх отдельных скиллах под `.claude/skills/`:
 
-   - 🇷🇺 RU → [.claude/skills/legal-ru/SKILL.md](.claude/skills/legal-ru/SKILL.md)
-   - 🇺🇸 US → [.claude/skills/legal-us/SKILL.md](.claude/skills/legal-us/SKILL.md)
-   - 🇪🇺 EU → [.claude/skills/legal-eu/SKILL.md](.claude/skills/legal-eu/SKILL.md)
-   - 🇷🇸 RS → [.claude/skills/legal-rs/SKILL.md](.claude/skills/legal-rs/SKILL.md)
+   - 🇷🇺 RU → [.claude/skills/legal/skill-legal-ru.md](.claude/skills/legal/skill-legal-ru.md)
+   - 🇺🇸 US → [.claude/skills/legal/skill-legal-us.md](.claude/skills/legal/skill-legal-us.md)
+   - 🇪🇺 EU → [.claude/skills/legal/skill-legal-eu.md](.claude/skills/legal/skill-legal-eu.md)
+   - 🇷🇸 RS → [.claude/skills/legal/skill-legal-rs.md](.claude/skills/legal/skill-legal-rs.md)
 
    **До написания любой юрисдикционной секции — прочитай соответствующий `SKILL.md` полностью через Read.** Эти скиллы — источник истины для применимых статутов, номеров статей, case law, авторитетных органов, каноничных источников, типичных ошибок и формата (a)/(b)/(c) для данной юрисдикции. Если файл скилла отсутствует — остановись и сообщи; не импровизируй юрисдикционную секцию из общих training-data.
 
@@ -129,7 +129,7 @@ tools: Read, Grep, Glob, Bash, Write, Edit, WebFetch, Agent
 Вопрос: <вопрос>
 План:
 1. Читаю: CLAUDE.md, LICENSE, pyproject.toml, package.json, license_texts/, docs/legal/README.md,
-          .claude/skills/legal-ru, legal-us, legal-eu, legal-rs
+          .claude/skills/legal/skill-legal-{ru,us,eu,rs}.md
 2. Исследую: <область A>, <область B>, ...
 3. Пишу: docs/legal/<date>-<slug>.md (+ обновляю docs/legal/README.md индекс)
 
@@ -202,7 +202,7 @@ related_docs: []
 
 ### 🇷🇺 RU — Российская Федерация
 
-*(Опирается на [.claude/skills/legal-ru/SKILL.md](.claude/skills/legal-ru/SKILL.md))*
+*(Опирается на [.claude/skills/legal/skill-legal-ru.md](.claude/skills/legal/skill-legal-ru.md))*
 
 **Применимое право.** <статьи статутов, постановление Пленума если релевантно — из скилла>
 
@@ -214,7 +214,7 @@ related_docs: []
 
 ### 🇺🇸 US — Соединённые Штаты
 
-*(Опирается на [.claude/skills/legal-us/SKILL.md](.claude/skills/legal-us/SKILL.md))*
+*(Опирается на [.claude/skills/legal/skill-legal-us.md](.claude/skills/legal/skill-legal-us.md))*
 
 **Применимое право.** 17 U.S.C. § <N>. Case law: *<Case>*, <citation>.
 
@@ -226,7 +226,7 @@ related_docs: []
 
 ### 🇪🇺 EU — Европейский Союз
 
-*(Опирается на [.claude/skills/legal-eu/SKILL.md](.claude/skills/legal-eu/SKILL.md))*
+*(Опирается на [.claude/skills/legal/skill-legal-eu.md](.claude/skills/legal/skill-legal-eu.md))*
 
 **Применимое право.** Directive 2009/24/EC ст. <N>, Directive 2001/29/EC ст. <N>. CJEU: *<Case>*, <номер дела>.
 
@@ -238,7 +238,7 @@ related_docs: []
 
 ### 🇷🇸 RS — Республика Сербия
 
-*(Опирается на [.claude/skills/legal-rs/SKILL.md](.claude/skills/legal-rs/SKILL.md))*
+*(Опирается на [.claude/skills/legal/skill-legal-rs.md](.claude/skills/legal/skill-legal-rs.md))*
 
 **Применимое право.** ЗАСП чл. <N>, ЗОО чл. <N> если релевантно. Примечание о EU-acquis гармонизации там, где материально.
 
@@ -298,7 +298,7 @@ Open questions:
 Вопрос: Можно ли включить библиотеку X (Apache-2.0) в core ERPNext?
 План:
 1. Читаю: CLAUDE.md, LICENSE, pyproject.toml, package.json, license_texts/, docs/legal/README.md,
-          .claude/skills/legal-ru, legal-us, legal-eu, legal-rs
+          .claude/skills/legal/skill-legal-{ru,us,eu,rs}.md
 2. Исследую:
    A) Apache-2.0 ↔ GPL-3.0-or-later one-way compatibility (patent grant + NOTICE-обязательства)
    B) Где X уже объявлен / вызывается в репозитории
@@ -435,15 +435,15 @@ Changelog: добавлена RS-юрисдикционная секция (на
 Начинаю шаг 1.
 ```
 
-[Пытается прочитать `.claude/skills/legal-rs/SKILL.md` → файл не найден]
+[Пытается прочитать `.claude/skills/legal/skill-legal-rs.md` → файл не найден]
 
 ```
-Заблокирован: скилл `legal-rs` не найден по пути .claude/skills/legal-rs/SKILL.md.
+Заблокирован: скилл `legal-rs` не найден по пути .claude/skills/legal/skill-legal-rs.md.
 
 Четыре-юрисдикционный профиль (RU/US/EU/RS) не обсуждается по Правилу 1; я не буду импровизировать RS-секцию из общих training-data.
 
 Подтверди:
-A. Восстановить/создать `.claude/skills/legal-rs/SKILL.md` — я перезапущу.
+A. Восстановить/создать `.claude/skills/legal/skill-legal-rs.md` — я перезапущу.
 B. Явно запросить три-юрисдикционный отчёт (только RU/US/EU) — это отклонение от стандартного контракта; я зафиксирую пропуск и причину в frontmatter документа.
 
 По умолчанию: жду решения. Не продолжаю.

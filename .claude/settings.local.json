@@ -12,7 +12,15 @@
       "Bash(sed -n '3570,3585p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/doctype/payment_entry/payment_entry.py)",
       "Bash(sed -n '288,298p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/party.py)",
       "Bash(git -C /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/ rev-parse --short HEAD)",
-      "Bash(git -C /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/ branch --show-current)"
+      "Bash(git -C /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/ branch --show-current)",
+      "Bash(mkdir -p /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/ru /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/us /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/eu /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/rs)",
+      "Bash(mv /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal-rs/SKILL.md /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/rs/SKILL.md)",
+      "Bash(find /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/ -type f -exec wc -l {} +)",
+      "Bash(mv ru/SKILL.md skill-legal-ru.md)",
+      "Bash(mv us/SKILL.md skill-legal-us.md)",
+      "Bash(mv eu/SKILL.md skill-legal-eu.md)",
+      "Bash(mv rs/SKILL.md skill-legal-rs.md)",
+      "Bash(rmdir ru *)"
     ]
   }
 }

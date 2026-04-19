@@ -20,7 +20,7 @@ Every legal finding under this directory follows the same structure (see the age
 7. **Open Questions** — outstanding `TODO(verify)` items.
 8. **Changelog** — version history of the document.
 
-The four jurisdictional sections are backed by four skills living under [.claude/skills/](../../.claude/skills/): [legal-ru](../../.claude/skills/legal-ru/SKILL.md), [legal-us](../../.claude/skills/legal-us/SKILL.md), [legal-eu](../../.claude/skills/legal-eu/SKILL.md), [legal-rs](../../.claude/skills/legal-rs/SKILL.md).
+The four jurisdictional sections are backed by four skill files living under [.claude/skills/legal/](../../.claude/skills/legal/): [skill-legal-ru.md](../../.claude/skills/legal/skill-legal-ru.md), [skill-legal-us.md](../../.claude/skills/legal/skill-legal-us.md), [skill-legal-eu.md](../../.claude/skills/legal/skill-legal-eu.md), [skill-legal-rs.md](../../.claude/skills/legal/skill-legal-rs.md).
 
 ## Index
 
