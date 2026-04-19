@@ -20,7 +20,8 @@
       "Bash(mv us/SKILL.md skill-legal-us.md)",
       "Bash(mv eu/SKILL.md skill-legal-eu.md)",
       "Bash(mv rs/SKILL.md skill-legal-rs.md)",
-      "Bash(rmdir ru *)"
+      "Bash(rmdir ru *)",
+      "Bash(chmod +x /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/hooks/example/*.sh)"
     ]
   }
 }
