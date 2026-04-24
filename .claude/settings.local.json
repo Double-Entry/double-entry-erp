@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn \"^class.*:\" erpnext/controllers/*.py)",
+      "Read(//Users/nikitagribkov/.claude/**)",
+      "Read(//Users/nikitagribkov/**)",
+      "Bash(git -C /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp rev-parse --short HEAD)",
+      "Bash(git -C /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp branch --show-current)",
+      "Bash(sed -n '250,260p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/doctype/tax_withholding_category/tax_withholding_category.py)",
+      "Bash(sed -n '900,920p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/doctype/payment_reconciliation/payment_reconciliation.py)",
+      "Bash(sed -n '2588,2600p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/doctype/sales_invoice/sales_invoice.py)",
+      "Bash(sed -n '3570,3585p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/doctype/payment_entry/payment_entry.py)",
+      "Bash(sed -n '288,298p' /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/erpnext/accounts/party.py)",
+      "Bash(git -C /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/ rev-parse --short HEAD)",
+      "Bash(git -C /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/ branch --show-current)",
+      "Bash(mkdir -p /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/ru /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/us /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/eu /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/rs)",
+      "Bash(mv /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal-rs/SKILL.md /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/rs/SKILL.md)",
+      "Bash(find /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/skills/legal/ -type f -exec wc -l {} +)",
+      "Bash(mv ru/SKILL.md skill-legal-ru.md)",
+      "Bash(mv us/SKILL.md skill-legal-us.md)",
+      "Bash(mv eu/SKILL.md skill-legal-eu.md)",
+      "Bash(mv rs/SKILL.md skill-legal-rs.md)",
+      "Bash(rmdir ru *)",
+      "Bash(chmod +x /Users/nikitagribkov/Documents/Personal/Projects/double-entry-erp/.claude/hooks/example/*.sh)",
+      "WebFetch(domain:spdx.org)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/frappe/frappe/develop/license.txt\")",
+      "Bash(curl -s \"https://api.github.com/repos/frappe/frappe\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('license:', d.get\\('license',{}\\).get\\('spdx_id'\\), '/', d.get\\('license',{}\\).get\\('name'\\)\\)\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:www.gnu.org)"
+    ]
+  }
+}
